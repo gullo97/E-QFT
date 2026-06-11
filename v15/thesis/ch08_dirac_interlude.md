@@ -1,9 +1,8 @@
 # Chapter 8 — Interlude: relativistic fermions in a finite box
 
-> **Author: Fable 5 (full chapter; the former split is absorbed) · Complexity ◇2–◇3, §8.7–8.8 load-bearing · Status: draft v1**
-> Depends on: Ch. 3, 5. Feeds: all of Part II.
-
 ---
+
+## 8.1 Why the box must go relativistic
 
 Part I asked how geometry changes; Part II will ask what those changes *create*. Three ingredients of that question are simply unavailable in non-relativistic quantum mechanics, and each names a section of this interlude. **Antiparticles**: a matter–antimatter asymmetry needs two charge branches, and only the relativistic spectrum has them ($E = \pm\sqrt{p^2 + m^2}$; §8.2). **CP violation**: the bias between the branches enters through the phase structure of the *mass term*, a possibility the Schrödinger equation does not offer (previewed in §8.4, owned by Ch. 10). **Pair creation**: a changing geometry repopulating the vacuum is a statement about mismatched Fock spaces, which requires second quantization in finite volume (§8.6, machinery in App. A). The chapter builds each tool from its motivation, then closes with the two sections everything in Part II stands on: the symmetrized charge operator (§8.7) and the bookkeeping of charge across a quench (§8.8).
 
@@ -119,7 +118,7 @@ An honesty paragraph before the chapter's payload. The sea is a *bookkeeping dev
 
 ---
 
-## 8.7 The charge operator must be symmetrized *(Fable 5)*
+## 8.7 The charge operator must be symmetrized
 
 Everything in Part II balances on how the charge of a state is counted, so we do this slowly and exactly.
 
@@ -147,7 +146,7 @@ where $\eta \equiv \sum_k \operatorname{sgn}(E_k)$ is the **spectral asymmetry**
 
 Equation (8.2) is the hinge of Part II, so let us state what it says with full force. The charge of a state is *particles minus antiparticles* — the familiar part — **plus a c-number that belongs to the vacuum itself**, fixed entirely by the spectrum of the Dirac operator. If the spectrum is symmetric under $E \to -E$, the vacuum is neutral and the naive counting is safe. If the spectrum is lopsided — one level pushed across zero, say — the vacuum *carries charge*, with no particle anywhere. Both the divergence of each sum in $Q_{\text{vac}}$ and its regularization are dealt with honestly in Ch. 9; the structure is what matters here.
 
-## 8.8 Charge bookkeeping across a quench *(Fable 5)*
+## 8.8 Charge bookkeeping across a quench
 
 One more preparation, cheap now and decisive later. Let the box change suddenly, $L \to L'$. Two complete eigenbases now exist — old and new — and expression (8.2) can be evaluated in either. The operator (8.1), however, is built from the field alone: *it does not know which basis we expand it in*. Moreover the quench Hamiltonian is bilinear in the field and commutes with $\hat Q$ — a sudden change of boundary parameters conserves total charge. So one conserved expectation value can be written two ways:
 

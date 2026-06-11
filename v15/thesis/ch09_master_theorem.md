@@ -1,8 +1,5 @@
 # Chapter 9 — Vacuum charge and the Spectral-Flow Master Theorem
 
-> **Author: Fable 5 · Complexity ◇5 · Status: draft v1 (pending global review pass)**
-> Depends on: Ch. 8 (esp. §8.7–8.8). Feeds: Ch. 10–12, 14 — all of Part II stands on this chapter.
-
 ---
 
 Part II's driving question — *does an expanding box create more matter than antimatter?* — sounds like a question about pair-creation amplitudes, and the natural reflex is to compute Bogoliubov coefficients and sum their squares. This chapter proves that the reflex, while not wrong as a calculation, answers the wrong question. The *net charge* created by any sudden geometry change is fixed by a single spectral quantity, with no mode sum, no truncation, and no amplitude anywhere in sight. Once this theorem is in hand, the phenomenology of the following chapters becomes almost embarrassingly easy to organize: mechanisms that move the spectrum produce charge; mechanisms that do not, cannot — whatever their truncated mode sums appear to say.

@@ -1,8 +1,5 @@
 # Chapter 21 — Closing the constraint: Friedmann universes and emergent attraction
 
-> **Author: Fable 5 · Complexity ◇4 · Status: draft v1 (pending global review pass)**
-> Depends on: Ch. 16.3/16.5, 20. Feeds: Ch. 22 (the stiffness this chapter borrows), 24 (Newton from the same linearization).
-
 ---
 
 Chapter 20 put the model on the right *orbit family* — but an orbit family is a kinematic statement. Which orbit a universe takes — how fast it expands for a given matter content, whether it sits on the vacuum circle or in the matter interior — is fixed in general relativity by the **Hamiltonian constraint**: the statement that the total energy of geometry plus matter vanishes, the geometry's kinetic energy entering with a negative sign (Ch. 16.3). This chapter imposes that constraint on the generator-coupled ladder — imported as the chapter's single structural **[Postulate]**, its microscopic derivation deferred with a precise attack plan (Ch. 27, item 1) — and shows that the quantum ladder then becomes a *Friedmann universe* to sub-percent accuracy: expansion decelerating because matter dilutes, at the rate matter dictates. The same closure, applied cell by cell to an inhomogeneous chain, then produces the thing Part I never had: **attraction** — overdensities growing at exactly the Newtonian rate, turning around, and collapsing at the classic spherical-collapse threshold. Matter pulling matter together, inside the model, with no force law postulated.
@@ -69,7 +66,11 @@ Beyond linear order, the cell picture keeps paying: an overdense patch is a slig
 - it peels upward off the linear law, **turns around** at $a_{\text{bg}}/a_0 = 1168$, and **collapses** at $1863$ — bracketing the spherical-collapse predictions as the thresholds dictate;
 - every cell in the Gaussian tail lags proportionally less: the profile of $a_i/a_{\text{bg}}$ dips smoothly toward the center — **a potential well forming**, deepest where the matter is (the quantitative weak-field identification $\delta\alpha = -\Phi_{\text{Newton}}$ is Ch. 24's first section).
 
-The animation (`ch21_anim_collapse.gif`) shows the unmistakable picture: in comoving coordinates the cell walls drift toward the overdensity from both sides — *matter attracting matter* — until the central cells crash while the outskirts keep expanding. This is gravitational instability — the mechanism that turned a smooth early universe into galaxies — running inside a model whose microscopic content is particles in boxes and an iso-energy rule.
+The animation shows the unmistakable picture: in comoving coordinates the cell walls drift toward the overdensity from both sides — *matter attracting matter* — until the central cells crash while the outskirts keep expanding. This is gravitational instability — the mechanism that turned a smooth early universe into galaxies — running inside a model whose microscopic content is particles in boxes and an iso-energy rule.
+
+![Collapse, live](figures/ch21_anim_collapse.gif)
+
+*Animation 21.A — Emergent attraction in motion: comoving cell walls falling toward the central overdensity beside the growing density contrast $\delta(a)$, through turnaround and collapse.*
 
 ![Growth, turnaround, collapse](figures/ch21_fig3_collapse.png)
 

@@ -1,8 +1,5 @@
 # Chapter 22 — The stiffness from matter loops: induced gravity and the Planck cell
 
-> **Author: Fable 5 · Complexity ◇5 · Status: draft v1 (pending global review pass)**
-> Depends on: Ch. 16, 21; App. B. Feeds: Ch. 23 (compensator), 24 (Poisson), 25 (the covariant version of this chapter's measurement).
-
 ---
 
 Every quantitative success so far has rented its units from one unexplained number: the stiffness $\kappa = (8\pi G)^{-1}$ — how much energy it costs to bend geometry. A theory that must be *told* the strength of gravity has explained its form but not its existence. This chapter computes the stiffness from the model's own matter content, twice, from opposite ends. **Top-down**: Sakharov's 1967 observation — matter vacuum loops on a curved background *induce* an Einstein–Hilbert term whether or not any gravitational dynamics is postulated — evaluated with the one ingredient the box model uniquely supplies: a physical identification of the cutoff (the cell scale), which converts the usual embarrassment of induced-gravity ("$G$ depends on an arbitrary $\Lambda_{\text{UV}}$") into a *prediction*: the mean cell size is the Planck length, up to a species factor. **Bottom-up**: in one dimension the model permits something stronger than an estimate — a direct numerical *measurement* of the induced action of the geometry field, including its **sign**, which turns out negative along compression: gravity attracts, the conformal mode has wrong-sign kinetic energy, and the constraint's "geometry energy is negative" (Ch. 21) stops being a postulate. The two computations meet at the same answer from different directions, which is the kind of overdetermination this Part is built on.

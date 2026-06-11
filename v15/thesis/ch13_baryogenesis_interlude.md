@@ -1,8 +1,5 @@
 # Chapter 13 — Interlude: baryogenesis background
 
-> **Author: Fable 5 (absorbing the former Opus slot) · Complexity ◇3 · Status: draft v1**
-> Depends on: nothing in Parts I–II (standalone standard physics). Feeds: Ch. 14 directly; §13.5 is its budget's foundation.
-
 ---
 
 Chapter 12 built a pump; Chapter 14 must install it in the early universe. Between them sits a body of standard physics — what the asymmetry *is*, what any mechanism must supply (Sakharov), how produced charge becomes baryons (sphalerons), how it dilutes to today's number (entropy), and why the Standard Model's own CP violation is famously insufficient (GIM). This interlude derives each piece at the depth Ch. 14 consumes it, with the two numerical workhorses — $28/79$ and $45/2\pi^2 g_*$ — audited rather than quoted. Everything here is **[Standard]**; the only thesis-specific content is the final table saying which lines the framework rewrites.

@@ -1,8 +1,5 @@
 # Chapter 27 — Open problems, with attack plans
 
-> **Author: Fable 5 · Complexity ◇4 · Status: draft v1 (pending global review pass)**
-> Depends on: everything. This chapter is the research program.
-
 ---
 
 A thesis that ends by claiming completeness invites the reader to find the gap; one that ends by *cataloguing* its gaps, each with a posed first calculation and a falsification stake, invites the reader to join the work. Here is the honest remainder, ordered by tractability — items 1–3 are finite calculations, 4–6 are structural derivations with concrete entry points, 7–10 are the frontier. Each entry: statement, why it matters, the first calculation, and what failure would cost.

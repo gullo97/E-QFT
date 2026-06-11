@@ -1,8 +1,5 @@
 # Chapter 10 — CP phases in a box: what is physical and what is frame
 
-> **Author: Fable 5 · Complexity ◇5 · Status: draft v1 (pending global review pass)**
-> Depends on: Ch. 8, 9. Feeds: Ch. 11 (the diagnostic), Ch. 12 (the mechanism), Ch. 19 (the identification-map principle).
-
 ---
 
 The Master Theorem turned baryogenesis into a hunt: find the parameter whose change drags Dirac levels through zero. This chapter interrogates the most natural suspect — a CP-violating phase on the fermion mass, $m \to m\,e^{i\delta\gamma_5}$ — and reaches a verdict that took this research program considerable pain to earn: **a bulk CP phase is exactly inert.** It cannot tilt the spectrum, cannot charge the vacuum, cannot produce one unit of net charge under any sudden expansion, ever. We prove this twice, by independent routes (a similarity map in 3+1D, an exact mirror symmetry in 1+1D), because the result must bear the weight of overturning a very plausible-looking phenomenology — including a reproducible, $\sin 2\delta$-odd, numerically convergent "asymmetry" that Ch. 11 will dissect.
@@ -79,7 +76,7 @@ Now read (10.8) the way Ch. 9 taught us to read spectra.
 >
 > — at every order in $\delta$, for every expansion ratio, at every $mL$. A bulk CP phase cannot produce net charge under sudden expansion. Full stop.
 
-**[Computed]** Complete spectra at $\delta = \pi/4$: $\eta = 4\times10^{-16}$ ($L = 1$, all $128$ levels below $E_{\max} = 200$) and $9\times10^{-16}$ ($L = 1.2$, $152$ levels) — machine zero (`ch10_mirror_spectrum.py`).
+**[Computed]** Complete spectra at $\delta = 0.3$ and $\pi/4$ ($38$ levels below $E_{\max} = 60$): the $E \leftrightarrow -E$ pairing holds level by level to the root-finder tolerance, and $\eta = -1.5\times10^{-9}$ and $-6.6\times10^{-9}$ — zero at the solver floor (`ch10_mirror_spectrum.py`; the validated archive run with tighter tolerances and $152$ levels reaches $9\times10^{-16}$).
 
 ![The mirror at work](figures/ch10_fig3_mirror_spectrum.png)
 
@@ -103,7 +100,7 @@ Notice the structural fingerprint: the $m_I$ terms enter **both** equations with
 >
 > *Proof.* Each derivative produces $\frac{d}{dr}(e^{m_I r}G) = e^{m_I r}(G' + m_I G)$; the $+m_I G$ cancels the $+m_I g$ term of (10.9) after dividing the common $e^{m_I r}$ (same for $F$), leaving exactly the $\delta = 0$ system $G' = (E + m_R)F - \frac{1+\kappa}{r}G$, $F' = -(E - m_R)G - \frac{1-\kappa}{r}F$. The MIT condition $f(R) = -g(R)$ is a *ratio* condition, untouched by a common positive factor. $\blacksquare$
 
-**[Computed]** (`ch10_radial_similarity.py`): eigenvalues of (10.9) at $\delta = 0.3, 0.6, 1.0$ ($\kappa = \pm1, +2$, $m = 1.7$, $R = 1$) match the $\delta = 0$, $m\to m\cos\delta$ system to $5\times10^{-10}$; the pointwise ratio $g_\delta/g_0$ equals $e^{m_I r}$ to $1.3\times10^{-6}$.
+**[Computed]** (`ch10_radial_similarity.py`, direct integration of (10.9) by independent ODE shooting — no use of the theorem): eigenvalues at $\delta = 0.3, 0.6, 1.0$ ($\kappa = -1$, $m = 1.7$, $R = 1$) match the $\delta = 0$, $m \to m\cos\delta$ system to $4.5\times10^{-11}$; the pointwise ratio $g_\delta/g_0$ equals $e^{m_I r}$ to $4.4\times10^{-11}$. (The validated archive extends the check across $\kappa = \pm1, +2$.)
 
 ![Dressing, not dynamics](figures/ch10_fig2_radial_similarity.png)
 
@@ -137,4 +134,4 @@ The only door left open — and it is wide open — is a wall-angle **difference
 
 ---
 
-**Validation.** `ch10_radial_similarity.py`: Dressing Theorem ($5\times10^{-10}$ eigenvalues; $e^{m_I r}$ ratio; flat-measure overlap defect vs the consistent product (10.11)). `ch10_mirror_spectrum.py`: roots of (10.8) vs transfer-matrix spectra; gap-sector emptiness; $\eta$ at machine zero for two box sizes; slab check with random transverse momenta. Both scripts print every number quoted above.
+**Validation.** `ch10_radial_similarity.py`: Dressing Theorem by independent radial ODE integration ($4.5\times10^{-11}$ eigenvalues; $e^{m_I r}$ ratio to $4.4\times10^{-11}$; Fig. 10.2). `ch10_mirror_spectrum.py`: roots of (10.8) vs transfer-matrix spectra; spectrum-vs-$\delta$ collapse onto the $m\cos\delta$ bag (Fig. 10.3); $\eta$ at the solver floor for two phases. The slab transverse-momentum cancellation (§10.A) is exercised in the validated archive (`ports/quench1d.py`). Both v15 scripts print every number quoted above.

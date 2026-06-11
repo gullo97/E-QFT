@@ -1,11 +1,8 @@
 # Chapter 17 — The dictionary: a box is a metric, expansion is cosmology
 
-> **Author: Fable 5 (full chapter; the former split is absorbed) · Complexity ◇3–◇4 · Status: draft v1**
-> Depends on: Ch. 2–3, 5, 16.1/16.5/16.8. Feeds: all of Part III.
-
 ---
 
-## 17.1 The claim *(Fable 5)*
+## 17.1 The claim
 
 Part III rests on a statement that sounds like an analogy and is in fact an identity, and the difference between those two words carries the rest of this thesis. The statement: **a box of size $L$ and a box of fixed unit size with spatial metric $g_{\xi\xi} = L^2$ are not two systems that resemble each other — they are one system in two coordinate systems.** Nothing in Part I or Part II was "like" cosmology. It *was* cosmology, written in the coordinates where the walls move and the metric is trivial rather than the coordinates where the walls are fixed and the metric does the moving. The dictionary below is a change of variables, exact in every detail, with three immediate consequences: the iso-energy curves of Ch. 2 are comoving modes redshifting; the sudden quenches of Part II are step-function scale-factor particle production, a standard topic since Parker — with the bag walls and the CP structure as this framework's genuine additions; and in 1+1D the correspondence is *total*: any wall trajectory realizes a fermion in an arbitrary two-dimensional spacetime. After this chapter, "does the box model produce gravity?" stops being a hopeful question about emergence and becomes a sharp question about *which* metric dynamics the sector traffic of Part I selects. The remaining chapters of Part III answer it: Kasner's (Ch. 20), Friedmann's (Ch. 21), Newton's (Ch. 24), and — at one loop — Einstein's (Ch. 25).
 
@@ -57,7 +54,7 @@ The single conformal-symmetry breaker is the mass, which couples through the inv
 
 
 
-## 17.5 What is gauge and what is physics *(Fable 5)*
+## 17.5 What is gauge and what is physics
 
 The dictionary also settles, exactly, which of Part I's structures is *geometry* and which is *gauge*. A global rescaling of $L$ at fixed quantum numbers changes the spectrum: physics. The *simultaneous* rescaling $(n, L) \to (\lambda n, \lambda L)$ does not: gauge. In metric language the latter reads
 

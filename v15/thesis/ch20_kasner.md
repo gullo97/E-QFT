@@ -1,8 +1,5 @@
 # Chapter 20 — Minisuperspace dynamics: the Kasner Selection Theorem
 
-> **Author: Fable 5 · Complexity ◇5 · Status: draft v1 (pending global review pass)**
-> Depends on: Ch. 3 (the Lemma), 4, 16.6, 18, 19. Feeds: Ch. 21 (the constraint), 24 (BKL epochs are this chapter's flights).
-
 ---
 
 Everything is now in place to run the model as a universe and grade it against general relativity. The cell's diagonal sector is a three-axis copy of Part I's ladder (Ch. 18–19); the dictionary says its rungs are scale factors (Ch. 17); and GR's verdict for this configuration space — homogeneous, flat, anisotropic — is unforgiving and specific: vacuum Bianchi-I universes follow **Kasner orbits**, straight lines in $\alpha_a = \ln a_a$ with exponents on the circle $\sum p_a = \sum p_a^2 = 1$, one axis always contracting (Ch. 16.6). The question of this chapter is whether the quantum ladder reproduces that — and the answer turns out to hinge, completely, on the one dynamical choice Part I left open: *which operator couples neighbouring geometry sectors*. The embedding coupling lands in the wrong universality class (instructively wrong — it isotropizes, like Bianchi-I with matter). The dilation-generator coupling — whose matrix element $\langle n{+}1|x\partial_x|n\rangle = \tfrac{2n(n+1)}{2n+1}$ was computed in Ch. 3 with a promissory note attached — lands *exactly* on the Kasner class. The note is hereby redeemed: half a page of trigonometric integrals in Chapter 3 selects the orbit family of general relativity.
@@ -95,7 +92,13 @@ The quantum universe sits *on* the Kasner circle to three–four digits, with on
 
 *Figure 20.4 — The orbit-space discriminant: $L$-linear (embedding) versus $\alpha$-linear (generator) trajectories; the slope ratio check $p_3/p_2 = 2$.*
 
-*Animations:* `ch20_anim_kasner.gif` — the physical box of the vacuum run, a cube flattening along axis 1 while stretching along 2 and 3, beside the state pinned to the Kasner circle; `ch20_anim_isotropization.gif` — the expansion-rate box of the embedding run relaxing from needle to cube as $\Sigma_K \to \tfrac13$. Both are rendered from the saved quantum trajectories, not cartoons.
+![Vacuum Kasner, live](figures/ch20_anim_kasner.gif)
+
+*Animation 20.A — The vacuum-Kasner run: the physical box flattening along axis 1 while stretching along 2 and 3, beside the state pinned to the Kasner circle. Rendered from the saved quantum trajectories, not cartoons.*
+
+![Isotropization, live](figures/ch20_anim_isotropization.gif)
+
+*Animation 20.B — The embedding-coupled run: the expansion-rate box relaxing from needle to cube as $\Sigma_K \to \tfrac13$ — matter-like isotropization.*
 
 ## 20.5 Quantum corrections, measured for free
 

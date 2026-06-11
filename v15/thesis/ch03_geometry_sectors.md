@@ -1,8 +1,5 @@
 # Chapter 3 — Geometry as a quantum variable: sectors, transitions, overlaps
 
-> **Author: Fable 5 · Complexity ◇4 · Status: draft v1 (pending global review pass)**
-> Depends on: Ch. 2. Feeds: every later chapter; the Lemma of §3.6 is redeemed in Ch. 20.
-
 ---
 
 Chapter 2 ended with an observation and a tension. The observation: the box spectrum is invariant under the simultaneous rescaling of the quantum number and the box size. The tension: that statement is about *the state and the geometry together*, yet ordinary quantum mechanics keeps them on opposite sides of the formalism — the state lives in a Hilbert space, the geometry sits outside it as a parameter. As long as $L$ is a parameter, the iso-energy structure can only ever be a bookkeeping curiosity.

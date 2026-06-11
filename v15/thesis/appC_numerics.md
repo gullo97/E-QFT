@@ -1,7 +1,5 @@
 # Appendix C — Numerical methods and reproducibility
 
-> **Author: Fable 5 · Complexity ◇3 · Status: draft v1.** This appendix owns the standards every script in `v15/scripts/` obeys, and documents the shared numerical machinery. It is deliberately terse; the scripts themselves carry per-method docstrings.
-
 ## C.1 The reproducibility contract
 
 1. **One number, one script.** Every number quoted in the thesis is printed by exactly one script, named at the chapter's *Validation* footer. No number enters the text from a notebook, a memory, or a previous run.

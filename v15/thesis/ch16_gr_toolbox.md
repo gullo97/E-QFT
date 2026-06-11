@@ -1,8 +1,5 @@
 # Chapter 16 — Interlude: the general-relativity toolbox
 
-> **Author: Fable 5 (absorbing the former Opus slot) · Complexity ◇3 (volume, not depth) · Status: draft v1**
-> Standalone background; everything is **[Standard]**. Each section is tagged with its consumers, and can be deferred until first cited. A reader fluent in GR may skip to Ch. 17 and return on demand.
-
 ---
 
 Part III will claim that a lattice of quantum boxes *does general relativity* — Kasner orbits, Friedmann cosmology, Newtonian attraction, BKL chaos, a graviton. Claims of that kind are only as sharp as the reader's command of what they assert. This interlude supplies, self-containedly, every piece of GR the later chapters measure against: nothing exotic, no derivations beyond what gets consumed, and the framing chosen — sometimes idiosyncratically — for the consumer chapter named in each section tag.

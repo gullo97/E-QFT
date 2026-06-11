@@ -1,8 +1,5 @@
 # Chapter 15 — Why geometry must be dynamical: the normalization diagnostic
 
-> **Author: Fable 5 (full chapter; the former split is absorbed) · Complexity ◇3–◇4 · Status: draft v1**
-> Depends on: Ch. 2–3 (the iso-energy structure), Ch. 8.6 (mode expansions). Feeds: Ch. 22 (the correct home of "cells are the cutoff").
-
 ---
 
 Part II closes with a diagnostic chapter of a different flavor: not a wrong *answer* this time, but a tempting wrong *implementation* of the framework's own central idea. The question it answers is one any thoughtful reader has by now: the iso-energy structure ties mode numbers to box sizes — could that tie live *inside* the field operator of an ordinary fixed-geometry QFT, say as a mode-dependent normalization, and incidentally cure the ultraviolet? The proposal is natural, its successes are real and striking (every propagator-type divergence dies, in every dimension), and it fails — definitively, by theorem — in a way that illuminates exactly *why* the arena of Chapter 3 has the shape it has. This is the cheapest available proof that geometry must be dynamical, and the thesis spends a chapter on it for the same reason Ch. 11 dissected the polarization: the strongest defense of the right structure is the autopsy of its nearest plausible rival.
@@ -53,7 +50,7 @@ Three structural problems surface before the fatal one, each a derivation rather
 
 ---
 
-## 15.4 The verdict: no continuum limit *(Fable 5)*
+## 15.4 The verdict: no continuum limit
 
 The deepest problem is not algebraic but thermodynamic, and it admits a one-paragraph proof.
 
@@ -67,7 +64,7 @@ The deepest problem is not algebraic but thermodynamic, and it admits a one-para
 
 The diagnosis, then: the prescription correctly intuits that *normalization should know about geometry*, and implements the intuition in the one place it cannot live — inside a fixed-geometry Hilbert space, as a kinematic deformation of mode functions. Geometry knowledge bolted onto a static arena destroys the arena.
 
-## 15.5 The correct implementation — already in hand *(Fable 5)*
+## 15.5 The correct implementation — already in hand
 
 Now compare with what Part I actually built. In the Geometry-Sector Decomposition (Ch. 3), $L$ is a *dynamical quantum label*: high modes are not kinematically damped — they **decohere dynamically into neighbouring geometry sectors** (the ladder dynamics of Ch. 4, the golden-rule traffic of Ch. 6), with rates derived rather than postulated. Every desideratum the normalization hack chased is delivered there without the pathologies: the geometry-dependence of the quantum theory (sectors), the suppression of geometry-violating configurations (overlap costs $\sqrt{n/(n+m)}$ and contraction deficits), and — completing the triad in Part III — the *UV cutoff tied to geometry*, which returns in Ch. 22 not as a deformation of mode functions but as the physical statement that **the cells are the cutoff**: $\Lambda_{\text{UV}} \sim 1/\bar L_{\text{cell}}$, dynamical because the cell size is.
 

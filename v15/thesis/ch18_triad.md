@@ -1,8 +1,5 @@
 # Chapter 18 — A lattice of cells: the triad, the missing shears, and the conformal obstruction
 
-> **Author: Fable 5 · Complexity ◇4 · Status: draft v1 (pending global review pass)**
-> Depends on: Ch. 3, 16, 17. Feeds: Ch. 19–20 (shape space, dynamics), Ch. 23 (frame gauging), Ch. 25 (the TT sector lives in what this chapter builds).
-
 ---
 
 The dictionary of Ch. 17 converts one box into one metric — a *homogeneous* geometry, a single dial per direction. General relativity is a theory of geometry that varies from place to place. The minimal upgrade is a **lattice of cells**: tile space, give each cell its own shape, and let the iso-energy machinery of Part I act cell by cell. This chapter builds the kinematics of that upgrade and discovers two things, one gratifying and one humbling. Gratifying: the cell description automatically produces the *triad* (vielbein) — the variable on which every modern gauge-theoretic formulation of gravity is built, and the one that standard treatments must postulate. Humbling: the transition operators inherited from Part I generate only *half* the metric — and the missing half is not a detail, because a theorem stands behind it: geometry built from dilations alone is conformally flat, and conformally flat gravity is experimentally dead (no light bending, no gravitational waves). Identifying the missing generators — the iso-energy **shears** — and verifying that the completed set closes on $\mathfrak{gl}(3)$ is this chapter's constructive payoff.

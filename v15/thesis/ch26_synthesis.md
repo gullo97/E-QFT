@@ -1,8 +1,5 @@
 # Chapter 26 — Synthesis: three faces of one structure
 
-> **Author: Fable 5 · Complexity ◇4 · Status: draft v1 (pending global review pass)**
-> Depends on: everything. Feeds: Ch. 27 and the defense.
-
 ---
 
 Three Parts, three apparently different conclusions: confined quantum matter prefers expansion (Part I); changing geometry pumps quantized charge through boundary-localized CP violation (Part II); a lattice of cells, coupled through its own symmetry generator and stiffened by its own matter loops, executes general relativity from Kasner to the graviton (Part III). This short chapter does two things: it shows that these are not three results but **one structure seen from three sides**, and it consolidates the honest scorecard — what is theorem, what is measured, what would falsify the program, and what the thesis does not claim.

@@ -52,6 +52,8 @@ REGISTRY = [
     ("ch24_mixmaster.py",         "fast",  "BKL u-map sequence 4.3 -> 3.3 -> 2.3 -> 1.3 -> 10/3"),
     ("ch25_graviton.py",          "heavy", "kappa_TT/C -> -0.987/-1.008 at s=3; conformal sign; diffeo control"),
     ("make_schematics.py",        "fast",  "all drawn/concept figures (28), reproducibly"),
+    ("regen_part1_figs.py",       "fast",  "fresh ch03/ch06/ch08 figures (overlap anatomy, spectator, bag spectrum)"),
+    ("make_anims_v15.py",         "slow",  "animations: ladder spreading (ch04), the pump live (ch12)"),
 ]
 
 def main():

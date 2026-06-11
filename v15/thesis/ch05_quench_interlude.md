@@ -1,8 +1,5 @@
 # Chapter 5 — Interlude: sudden, adiabatic, and the quench concept
 
-> **Author: Fable 5 (absorbing the former Opus slot) · Complexity ◇2 · Status: draft v1**
-> Depends on: Ch. 2–3. Feeds: Ch. 6 (regimes of the norm theorems), Part II (the quench is its central operation), Ch. 17 (the same dial, cosmologically).
-
 ---
 
 The word *quench* will appear on nearly every page of Part II, and the sudden approximation has already done silent work in Chapter 3 (it is what made extension-by-zero and restriction the canonical sector maps). This short interlude pays the debt properly: the two limits of a time-dependent Hamiltonian, the dimensionless dial that separates them, and the one principle — boxed below — that this thesis elevates from folklore to operating rule, because Part II's central diagnosis (Ch. 11) is what happens when it is ignored.

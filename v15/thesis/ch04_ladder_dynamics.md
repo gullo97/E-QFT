@@ -1,8 +1,5 @@
 # Chapter 4 — Dynamics on the geometry ladder
 
-> **Author: Fable 5 (absorbing the former Opus slot) · Complexity ◇3 · Status: draft v1**
-> Depends on: Ch. 3. Feeds: Ch. 6 (rates), Ch. 20 (the hopping law's cosmological verdict).
-
 ---
 
 Chapter 3 built the arena and weighed the doorways: sectors, embeddings, and the overlap amplitudes that price each iso-energy step. What it did not do is let anything *move*. This chapter turns the ladder of geometries into a dynamical system — a tight-binding chain, borrowed intact from solid-state physics — and extracts the three behaviours the rest of the thesis consumes: band propagation, the exactly solvable spreading of geometry wavepackets, and the crossover between quantum geometry (small $n$, superpositions of box shapes) and classical geometry (large $n$, sharp drift). Throughout, one warning is kept lit: the chain's *hopping law* is a dynamical choice, not a derived fact, and Chapter 20 will show that the choice decides whether the emergent universe is merely expansion-flavored or exactly general-relativistic.
@@ -52,6 +49,10 @@ So an initially sharp geometry — a universe of definite size — does not stay
 ![Bessel spreading](figures/ch04_fig2_bessel_spreading.png)
 
 *Figure 4.2 — A definite geometry delocalizing. $|\langle n|\psi(t)\rangle|^2$ for an initially sharp rung: ballistic fronts at $n - n_0 = \pm 2Jt$, Bessel interference wake between them. (Script: `ch04_ladder_dynamics.py`.)*
+
+![Spreading animation](figures/ch04_anim_spreading.gif)
+
+*Animation 4.A — The same evolution, live: a universe of definite size dissolving into a superposition of sizes, its fronts riding the emergent speed limit $2J$. (`make_anims_v15.py`.)*
 
 ## 4.4 Geometry superpositions and the quantum-to-classical crossover
 

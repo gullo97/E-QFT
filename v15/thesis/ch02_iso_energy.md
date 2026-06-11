@@ -1,8 +1,5 @@
 # Chapter 2 — The particle in a box and the iso-energy structure
 
-> **Author: Fable 5 (absorbing the former Opus slot) · Complexity ◇2 · Status: draft v1**
-> Depends on: nothing but undergraduate quantum mechanics. Feeds: everything. $\hbar$ is kept explicit in this chapter only.
-
 ---
 
 Every framework has to start somewhere, and this one starts at the most thoroughly domesticated system in quantum mechanics. The choice is strategic: because the particle in a box holds no secrets, any structure we find in it is *certainly there* — the reader can check every step on a napkin — and the question becomes not "is this true?" but "why was this never taken seriously?" This chapter isolates the structural fact (a homogeneity of the spectrum), derives the one rule it implies for discrete geometry changes (the Iso-Energy Selection Rule), and is scrupulous about the boundary between mathematics and framework: two postulates are made here, they are flagged in boxes, and nothing else in Part I is assumed.

@@ -1,8 +1,5 @@
 # Chapter 23 — Weyl gauging, the compensator identified, and the road to general relativity
 
-> **Author: Fable 5 (full chapter; the former split is absorbed) · Complexity ◇4 · Status: draft v1**
-> Depends on: Ch. 16.9, 17.5, 18, 22. Feeds: Ch. 26.
-
 ---
 
 Part III has so far proceeded *empirically*: derive the dynamics, run it, measure the GR behaviours. This chapter is the theory consolidation — the gauge-theoretic statement of *why* the structures fit. It walks the honest version of an old road (global scale symmetry → local Weyl gauging → the obstruction → the compensator cure → Einstein–Hilbert), then adds the two contributions that belong to this framework: the identification of the compensator as the cell scale itself (§23.4), and the recognition that the model independently supplies every input of the Kibble–Sciama frame-gauging theorem (§23.5). The road's potholes are marked as carefully as its destination — the chapter's first half is the action-level twin of Ch. 18's kinematic obstruction theorem, and pretending otherwise has historically cost this research program real time.
@@ -79,7 +76,7 @@ And a structural bonus worth a sentence: gauge-fixing a *scalar* costs no diffeo
 
 ---
 
-## 23.4 The compensator, identified *(Fable 5)*
+## 23.4 The compensator, identified
 
 The construction of §23.3 is standard machinery awaiting one part: a physical field of Weyl weight $-1$ whose vacuum value breaks the symmetry. In generic scalar-tensor theory, $\sigma$ is *introduced* — an extra fundamental scalar whose sole job is to be eaten. The box model does not need to introduce anything, because it already contains a quantity of exactly the right weight, sitting in plain sight since Chapter 2:
 
@@ -99,7 +96,7 @@ Three consequences, each turning a former mystery into bookkeeping:
 
 *Figure 23.2 — The closing loop. Left route: spectrum homogeneity → Weyl gauging → compensator $\sigma = c_\sigma/L_{\text{cell}}$ → $M_P^2 = \sigma_0^2/6$. Right route: matter loops → Sakharov → $M_P^2 = N_{\text{eff}}\Lambda^2/96\pi^2$, $\Lambda = c/\bar L$. The routes meet at $M_P \sim 1/\bar L$: the Planck-Cell Prediction of Ch. 22, now overdetermined.*
 
-## 23.5 Beyond Weyl: the Kibble–Sciama completion *(Fable 5)*
+## 23.5 Beyond Weyl: the Kibble–Sciama completion
 
 The Weyl sector, even compensated, is one dial — and Ch. 18 proved one dial cannot be gravity (the Conformal Obstruction Theorem; §23.2 is its action-level echo). The completion is not an open gamble; it is a known theorem awaiting the ingredient the model uniquely supplies. In modern language, general relativity *is* a gauge theory — of the **frame group**, not of dilations: gauging local frame rotations acting on the vielbein (with translations realized as diffeomorphisms) and writing the lowest-order invariant action yields **Einstein–Cartan theory**, which is exactly GR whenever spin sources are negligible (torsion then vanishes algebraically). The dynamical variables are the vielbein $e^a_\mu$ and the spin connection $\omega^{ab}_\mu$; the curvature is $\omega$'s field strength; Einstein–Hilbert is the Yang–Mills-like invariant $\int e\,e^\mu_a e^\nu_b R^{ab}{}_{\mu\nu}$ (Ch. 16.9). **[Standard]**
 
@@ -115,7 +112,7 @@ What the standard treatment must postulate, the model derives — and this is th
 
 The counting closes exactly: symmetric part of $\mathfrak{gl}(3)$ = 6 = the metric; antisymmetric part = 3 = the gauge rotations; dilations survive as the *trace* — the Weyl sector of §23.1–23.3 is the determinant line of the larger frame gauge structure, not a rival to it. Nothing missing, nothing extra.
 
-## 23.6 Scorecard *(Fable 5)*
+## 23.6 Scorecard
 
 What this chapter establishes, with Part III's evidence attached: the gauge-theoretic *form* of the model's gravity sector is fixed — frame-group gauging on a derived triad, Weyl sector compensated by the cell scale, strength induced by matter loops — and its observable structure is not conjectural, because the surrounding chapters have already measured it: the orbit dynamics (Ch. 20–21), the negative conformal stiffness (Ch. 22), and — completing the gauge story's empirical leg — the transverse-traceless sector with the universal one-loop coefficient (Ch. 25). What remains structurally open, stated without cushioning: the **Lorentzian signature and the lapse/shift sector** — the construction above is spatial, time having entered only through transition dynamics; the measured negative compression sign (Ch. 22) is the seed of the resolution, not yet the resolution (Ch. 27, item 5). And the cosmological constant: the sentence of §22.4 applies verbatim to the $\lambda\sigma_0^4$ term here.
 

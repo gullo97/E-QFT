@@ -1,8 +1,5 @@
 # Chapter 11 — The polarization diagnostic: what truncated pair-creation sums measure
 
-> **Author: Fable 5 · Complexity ◇5 · Status: draft v1 (pending global review pass)**
-> Depends on: Ch. 8–10, App. A. Feeds: Ch. 12 (the control quench), Ch. 14 (what the kinematic amplitude must *not* be).
-
 ---
 
 Chapter 10 proved that a bulk CP phase produces exactly zero net charge under sudden expansion. And yet: compute the Bogoliubov coefficients for that very quench, sum the standard charge expression over a few dozen modes, and a clean, reproducible, nonzero number appears — odd in the phase as $\sin 2\delta$, stable under reasonable variations, passing every symmetry check one throws at it, including the ECPT-oddness identity of Ch. 7 to machine precision. At the parameters where such an analysis would naturally be run for the top quark at the electroweak crossover ($s = 2$, $mL = 1.085$, $\delta = 0.015$, $18$ modes per branch), the number is

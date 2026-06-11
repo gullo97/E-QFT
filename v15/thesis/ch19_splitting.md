@@ -1,8 +1,5 @@
 # Chapter 19 — Shape space: the Splitting Theorem
 
-> **Author: Fable 5 · Complexity ◇4–◇5 · Status: draft v1 (pending global review pass)**
-> Depends on: Ch. 16.4, 18. Feeds: Ch. 20 (why diagonal motion is a discrete ladder), Ch. 25 (the sectors whose stiffnesses get measured).
-
 ---
 
 Chapter 18 completed the kinematics: six metric directions per cell, three reached by Part I's discrete dilation ladder, three by the continuous shears. That asymmetry of *origin* — jumps versus flows — looks like an accident of how the theory was built. This chapter proves it is not. The two sectors are distinguished by the *quantum geometry of the matter itself*: against the natural metric on shape space (how much the matter's eigenstates change per unit deformation), the diagonal directions are exactly **flat but energy-carrying**, while the shears are exactly **energy-flat but geometry-carrying**, at every rectangular configuration. The split is a theorem, and it lands the model squarely on one of general relativity's deepest structural features: the DeWitt supermetric's segregation of the volume direction (the "clock") from the shape directions (the "propagating" modes). The model does not imitate that split; it *derives* one — with an honest caveat about the Lorentzian sign that later chapters discharge dynamically.

@@ -1,8 +1,5 @@
 # Chapter 7 — ECPT: one symmetry, two arrows
 
-> **Author: Fable 5 · Complexity ◇4 · Status: draft v1 (pending global review pass)**
-> Depends on: Ch. 3, 6. Feeds: Part II framing (Ch. 11–12, 14).
-
 ---
 
 Chapter 6 ended with a broken symmetry: the dynamics of confined many-body matter distinguishes expansion from contraction, exponentially. In particle physics, the discovery that a discrete operation is *not* a symmetry of nature has never been the end of a story — it has always been the beginning of one. Parity violation led to charge–parity ($CP$); $CP$ violation led to the realization that only the full product $CPT$ stands on a theorem. The pattern is: when a discrete operation breaks, ask *what completion of it survives*.

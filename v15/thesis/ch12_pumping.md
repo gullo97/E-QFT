@@ -1,8 +1,5 @@
 # Chapter 12 — The mechanism: wall-localized CP violation and quantized charge pumping
 
-> **Author: Fable 5 · Complexity ◇5 · Status: draft v1 (pending global review pass)**
-> Depends on: Ch. 8–11. Feeds: Ch. 14 (the kinematic engine), Ch. 26 (the unification).
-
 ---
 
 Three chapters of demolition have left exactly one door standing. Net charge requires spectral asymmetry (Ch. 9). A bulk CP phase cannot create it — it is a common shift of both wall angles in disguise, hence a mass renormalization (Ch. 10) — and the mode sums that pretended otherwise were measuring wall polarization (Ch. 11). The one parameter no bulk redefinition can reach is the **difference between the wall angles**. This chapter opens that door and finds behind it everything a baryogenesis mechanism could ask for: an exactly solvable spectrum governed by a single master equation; vacuum charge obeying a fractional law with a four-decade pedigree; level crossings at analytically computable box sizes; and — the payoff — *quantized*, anomaly-protected charge pumping under expansion, verified end to end, with the control experiment that Ch. 11's rules demand coming out exactly as the theorems require.
@@ -128,6 +125,10 @@ $$mL^* = \operatorname{artanh}(0.41615) = 0.44302 .$$
 ![Spectral flow waterfall](figures/ch12_fig3_spectral_flow_waterfall.png)
 
 *Figure 12.3 — The full spectrum vs $L$ ("waterfall"): mirror-symmetric pairs everywhere except the single gap-crossing level that carries the spectral flow. As the box grows through $L^*$ (at $\Delta > 0$), one state climbs out of the sea into the positive branch — the definition of "vacuum" changes by exactly one slot, $Q_{\text{vac}}$ jumps by $-1$, and the expansion pumps net charge $+1$. (New figure; `ch12_waterfall.py`; flow direction verified in `ch14_crossing_density.py`.)*
+
+![The pump, live](figures/ch12_anim_pump.gif)
+
+*Animation 12.A — The pump in motion. Left: the spectrum as the box expands, the gap level (orange) making its crossing. Right: the vacuum charge holding its fractional plateau, then jumping by exactly one unit at the analytically predicted $L^*$. (`make_anims_v15.py`; plateau values from the Fractional Charge Law, jump verified in `ch12_pump_control.py`.)*
 
 ## 12.5 The pump, run end to end — with its control
 

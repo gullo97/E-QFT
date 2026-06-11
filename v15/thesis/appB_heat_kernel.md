@@ -1,8 +1,5 @@
 # Appendix B — Heat kernel, zeta function, Seeley–DeWitt
 
-> **Author: Fable 5 (absorbing the former Opus slot) · Complexity ◇3 · Status: draft v1**
-> Consumed by: Ch. 9 (η and its jumps), Ch. 22 (induced gravity), Ch. 25 (Weyl counting and $C(s)$). All content **[Standard]**, rederived at consumption depth.
-
 ---
 
 Three chapters of this thesis stand on regulated spectral sums, and each leans on a different face of the same machine. This appendix builds the machine once: regulated sums and their regulator-(in)dependence (§B.1), the spectral asymmetry's properties (§B.2), the heat-kernel curvature expansion (§B.3), and the Weyl counting function with the universal coefficient $1/48\pi^2s^2$ derived in full (§B.4).

@@ -1,7 +1,5 @@
 # Appendix D — Notation and glossary
 
-> **Author: Fable 5 · Status: complete (symbol table + glossary). No chapter may silently deviate from this table.**
-
 ## D.1 Units and signature
 
 | Convention | Value |

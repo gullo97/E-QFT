@@ -1,8 +1,5 @@
 # Appendix A — Bogoliubov transformations in finite volume
 
-> **Author: Fable 5 (absorbing the former Opus slot) · Complexity ◇2–◇3 · Status: draft v1**
-> Consumed by: Ch. 8.6, 9.5, 11 (§A.3–A.4 are its technical backbone), Ch. 16.8.
-
 ---
 
 This appendix is the machine room for every "re-expand the state in the new basis" step of the thesis. It develops the Bogoliubov apparatus in the finite-volume, two-sector setting the framework actually uses — scalar warm-up, Dirac case, the exact unitarity identities, and the quantitative anatomy of how truncation breaks them. The last section is the one to read before re-deriving anything in Chapter 11.

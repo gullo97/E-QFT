@@ -1,8 +1,5 @@
 # Chapter 6 — Many bodies and the arrow of expansion
 
-> **Author: Fable 5 · Complexity ◇4–◇5 · Status: draft v1 (pending global review pass)**
-> Depends on: Ch. 2–5. Feeds: Ch. 7 (E-breaking), Ch. 14 ($f_{\text{neq}}$), Ch. 20–21 (ladder dynamics with matter).
-
 ---
 
 A single particle on the geometry ladder moves symmetrically: nothing in Chapters 3–4 distinguishes expansion from contraction. This chapter adds the one ingredient the real universe insists on — *other particles* — and proves that the symmetry shatters. When an active particle takes an iso-energy step, every other particle in the box (every **spectator**) must come along for the ride, and the price of the ride is direction-dependent: free for expansion, costly for contraction, and *multiplicatively* costly across spectators. The ratio of contraction to expansion probability falls exponentially with the number of particles. For a box holding more than a couple of dozen particles, contraction effectively never happens.
@@ -111,7 +108,7 @@ Everything so far computes *norms*. To claim an arrow we need *probabilities of 
 
 *Unitarity bookkeeping.* For contraction the weights (6.7) multiply to less than one. Nothing is lost: the missing probability is, to this order, the amplitude that the system *remains in sector $L$* — the contraction attempt simply fails. "A spectator would have been caught in the excised region" is not an absorbed event; it is a non-event. The dynamics is unitary on $\bigoplus_L \mathcal H(L)$ throughout.
 
-**[Computed]** (`ch06_golden_rule.py`, two-sector model, 220 modes per sector): Parseval sums reproduce $\mathcal N_{\text{con}}$ — $0.76749$ vs analytic $0.76882$ for $(n_1, n_2) = (5,3)$; $0.85112$ vs $0.85249$ for $(8,5)$; $0.90373$ vs $0.90530$ for $(12,7)$ — with residuals scaling as $1/n_{\max}$ exactly as the sinc tails dictate; expansion gives $1.00000$. Exact unitary evolution of the coupled two-sector Hamiltonian, no perturbation theory, gives $P(t)/(gt)^2 \to$ the Parseval value from below as $t \to 0$ (e.g. $0.965 \to 0.992$ toward $1$ for expansion at $n_2 = 3$), confirming both the theorem and its claimed regime of validity.
+**[Computed]** (`ch06_golden_rule.py`, two-sector model, 220 modes per sector): Parseval sums reproduce $\mathcal N_{\text{con}}$ — $0.76749$ vs analytic $0.76882$ for $(n_1, n_2) = (5,3)$; $0.85112$ vs $0.85249$ for $(8,5)$; $0.90373$ vs $0.90530$ for $(12,7)$ — with residuals scaling as $1/n_{\max}$ exactly as the sinc tails dictate; expansion gives $1.00000$. Exact unitary evolution of the coupled two-sector Hamiltonian, no perturbation theory, gives $P(t)/(gt)^2 \to$ the embedding norm from below as $t \to 0$ — measured for the $(n_1, n_2) = (5, 3)$ contraction: $0.682 \to 0.761$ across a hundredfold decrease of $t$, against the basis-truncated norm $0.767$ — confirming both the theorem and its claimed regime of validity.
 
 ![Golden-rule convergence](figures/ch06_fig3_golden_rule_convergence.png)
 

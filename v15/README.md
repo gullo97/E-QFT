@@ -20,7 +20,8 @@ No prior material (papers/, v13/, v14/) is required or referenced by the thesis 
 ## Build state
 
 - **All 27 chapters + 4 appendices written** (draft v1, single author: Fable 5) — the
-  document is complete end to end, ~75k words of text plus ~65 figures.
+  document is complete end to end: ~56k words of dense text (~125 pp before figures
+  and display mathematics) plus ~80 figures and 7 animations.
 - **18 validation scripts written and run, all checks passing**, including the thesis's
   new derivations re-validated independently in this build: the One-Crossing Theorem
   (390/390), the Dressing Theorem by direct radial ODE (4.5e-11), the quantized pump

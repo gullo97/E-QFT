@@ -1,7 +1,6 @@
 # Chapter 25 — The graviton, measured
 
-> **Author: Fable 5 · Complexity ◇5 · Status: draft v1 (pending global review pass)**
-> Depends on: Ch. 16.4, 18, 19, 22. Feeds: Ch. 26. **Notation:** in this chapter $s$ is the proper-time regulator (App. D, collision ruling D.5).
+*Notation: throughout this chapter $s$ denotes the proper-time regulator (App. D, ruling D.5), not an expansion ratio.*
 
 ---
 
@@ -83,7 +82,11 @@ What was measured is the matter-induced energy of *static* spatial metrics: $E_{
 
 $$\omega \;=\; |k| \tag{25.7}$$
 
-— **a massless, propagating, two-polarization wave: the graviton** — with the conformal mode as the constrained, wrong-sign direction: the DeWitt signature carrying the same coefficient that Ch. 19 met kinematically and Ch. 22 measured in 1D. The masslessness is itself a *measured* fact here: the TT response is pure gradient ($\kappa q^2$, $\beta$ negligible, no $q^0$ piece beyond the reparametrization-dependent constant) — no induced graviton mass. The animation `ch25_anim_graviton.gif` shows what this licenses: a $+$-polarized wave crossing the cell lattice, each cell stretched $1 + h$ by $1 - h$ in alternation — the box model's gravitational wave. The honest residue of this section: the time sector is *inferred through covariance*, not yet measured; the direct measurement (the dynamical response $\Pi(\omega, q)$, giving the wave speed) is Ch. 27, item 6.
+— **a massless, propagating, two-polarization wave: the graviton** — with the conformal mode as the constrained, wrong-sign direction: the DeWitt signature carrying the same coefficient that Ch. 19 met kinematically and Ch. 22 measured in 1D. The masslessness is itself a *measured* fact here: the TT response is pure gradient ($\kappa q^2$, $\beta$ negligible, no $q^0$ piece beyond the reparametrization-dependent constant) — no induced graviton mass. The animation shows what this licenses: a $+$-polarized wave crossing the cell lattice, each cell stretched $1 + h$ by $1 - h$ in alternation — the box model's gravitational wave.
+
+![The graviton, live](figures/ch25_anim_graviton.gif)
+
+*Animation 25.A — A $+$-polarized transverse-traceless wave crossing the cell lattice: the propagating mode whose kinetic coefficient the chapter just measured.* The honest residue of this section: the time sector is *inferred through covariance*, not yet measured; the direct measurement (the dynamical response $\Pi(\omega, q)$, giving the wave speed) is Ch. 27, item 6.
 
 ## 25.6 Five ways it could have died
 

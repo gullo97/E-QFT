@@ -1,8 +1,5 @@
 # Chapter 14 — From pumping to η_B: the corrected estimate
 
-> **Author: Fable 5 · Complexity ◇5 · Status: draft v1 (pending global review pass; §14.2–14.3 contain this thesis's principal new derivation)**
-> Depends on: Ch. 6, 12, 13. Feeds: Ch. 26, 27.
-
 ---
 
 Chapter 12 delivered a charge pump with an exactly quantized stroke: one unit per level crossing, protected by anomaly arguments against every continuous deformation. What it deliberately did not deliver is a *rate*. Quantization cleanly splits the baryogenesis problem into a protected part (the yield per crossing: exactly $\pm1$) and a contingent part (how often crossings happen, and with what sign bias). This chapter computes the contingent part as far as theorems allow and budgets the remainder without mercy. The result is a master formula whose kinematic engine — the **Crossing-Density Amplitude** — is new, geometric, and computable, and whose CP-strength factor is presented for what it is: the framework's dominant open problem, inherited from the Standard Model's GIM structure (Ch. 13), with sharply identified escape routes.
@@ -63,7 +60,7 @@ $$\mathcal N_{\text{steps}}\,\bar\nu \;=\; \Pr\Big[\,L^*(\Delta, \Sigma; m) \in 
 
 This is the corrected kinematic amplitude, and its structure is worth a sentence of contrast: it is a *probability* (bounded by 1, dimensionless, basis-free), not a truncated overlap sum; every pathology catalogued in Ch. 11 is structurally excluded. With $mL^*$ given by (14.3) and the epoch window $m L \in (m/T_{\text{in}}\text{-scale},\, \ldots)$ of order one at the crossover ($m_t/T_{\text{EW}} \sim 1$), $\mathcal P_\times$ is an order-unity geometric factor *whenever the angle distribution populates the existence region at all* — the entire smallness of $\eta_B$ is thereby pushed into the next factor, where it honestly belongs.
 
-**(b) The sign bias.** Which sign does a crossing pump? Under $E \to -E$, the Master Equation maps $\Delta \to -\Delta$ (Wall-Mismatch Criterion); correspondingly the crossing level dives *into* the sea for one sign of $\Delta$ and climbs *out* for the other, pumping $\mp 1$ respectively **[Computed]** (`ch14_crossing_density.py --flow-direction`: the jump of $Q_{\text{vac}}$ at $L^*$ is $-\operatorname{sgn}(\sin(\Delta/2))$ across the sampled region). The ensemble's net pumping is therefore controlled by the CP asymmetry of the angle distribution:
+**(b) The sign bias.** Which sign does a crossing pump? Under $E \to -E$, the Master Equation maps $\Delta \to -\Delta$ (Wall-Mismatch Criterion); correspondingly the crossing level dives *into* the sea for one sign of $\Delta$ and climbs *out* for the other, pumping $\mp 1$ respectively **[Computed]** (`ch14_crossing_density.py`: the jump of $Q_{\text{vac}}$ at $L^*$ is $-\operatorname{sgn}(\sin(\Delta/2))$ across all sampled crossings). The ensemble's net pumping is therefore controlled by the CP asymmetry of the angle distribution:
 
 $$\varepsilon_{CP} \;=\; \frac{\Pr[\text{crossing with } \Delta > 0] - \Pr[\text{crossing with } \Delta < 0]}{\Pr[\text{crossing}]}\,, \tag{14.7}$$
 
