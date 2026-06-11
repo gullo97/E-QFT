@@ -1,0 +1,51 @@
+# v15 thesis shared matplotlib style.
+# Derived from the papers/ style, retuned for in-thesis PNG figures
+# (markdown preview), slightly larger canvas and fonts.
+
+font.family         : serif
+font.serif          : DejaVu Serif, STIX, Computer Modern Roman, Times New Roman
+mathtext.fontset    : dejavuserif
+font.size           : 10
+axes.titlesize      : 10
+axes.labelsize      : 10
+xtick.labelsize     : 9
+ytick.labelsize     : 9
+legend.fontsize     : 9
+figure.titlesize    : 11
+
+figure.figsize      : 5.2, 3.6
+figure.dpi          : 130
+savefig.dpi         : 220
+savefig.bbox        : tight
+savefig.pad_inches  : 0.03
+savefig.format      : png
+
+axes.linewidth      : 0.8
+axes.edgecolor      : 333333
+axes.labelcolor     : 222222
+axes.spines.top     : False
+axes.spines.right   : False
+axes.grid           : True
+grid.color          : cccccc
+grid.linewidth      : 0.4
+grid.alpha          : 0.6
+
+xtick.direction     : out
+ytick.direction     : out
+xtick.major.size    : 3.0
+ytick.major.size    : 3.0
+xtick.major.width   : 0.7
+ytick.major.width   : 0.7
+xtick.color         : 222222
+ytick.color         : 222222
+
+lines.linewidth     : 1.5
+lines.markersize    : 4.5
+
+legend.frameon      : False
+legend.borderaxespad: 0.4
+legend.handlelength : 1.6
+legend.columnspacing: 1.2
+
+# expand = blue, contract = orange, +green, neutral grays, purple, brown
+axes.prop_cycle     : cycler('color', ['1f77b4', 'd95f00', '2ca02c', '7f7f7f', '9467bd', '8c564b'])
