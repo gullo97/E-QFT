@@ -1,0 +1,47 @@
+import numpy as np
+from vstyle import *
+nr = np.load("figs/q1_scan.npy", allow_pickle=True).item()
+ml = np.load("figs/q1_massless.npy", allow_pickle=True).item()
+cols = {3: C1, 10: C2, 30: C3}
+fig = plt.figure(figsize=(11.4, 7.6)); gs = fig.add_gridspec(2, 3, hspace=0.5, wspace=0.34)
+ax = fig.add_subplot(gs[0, 0])
+for n, a in nr.items():
+    ax.semilogx(a[:, 0], a[:, 1], color=cols[n], lw=1.8, label=f"$n={n}$ quantum")
+    ax.semilogx(a[:, 0], a[:, 4], color=cols[n], lw=1.2, ls="--")
+    ax.plot(0.02, (n/(n+1))**2, "<", color=cols[n], ms=7, clip_on=False)
+ax.axvline(1, color=MUTED, lw=0.9, ls=":")
+ax.plot([], [], color=INK2, ls="--", lw=1.2, label="classical particle")
+ax.set_xlim(0.02, 35); ax.set_xlabel(r"wall speed $u/v_\mathrm{particle}$"); ax.set_ylabel(r"$\langle E\rangle_\mathrm{after}/E_n$")
+ax.set_title("(a) massive particle: energy kept\nduring a step of finite speed"); ax.legend(fontsize=7.5, loc="lower right")
+ax = fig.add_subplot(gs[0, 1])
+for n, a in nr.items():
+    ax.semilogx(a[:, 0], a[:, 2], color=cols[n], lw=1.8, label=f"$n={n}$")
+    ax.axhline(n/(n+1), color=cols[n], lw=0.8, ls=":")
+ax.axvline(1, color=MUTED, lw=0.9, ls=":")
+ax.set_xlim(0.02, 35); ax.set_xlabel(r"wall speed $u/v_\mathrm{particle}$"); ax.set_ylabel("P(promoted mode $n{+}1$)")
+ax.set_title("(b) massive particle: promotion probability\n(dotted: sudden value $n/(n+1)$)"); ax.legend(fontsize=8, loc="upper left")
+ax = fig.add_subplot(gs[1, 0])
+for n, a in ml.items():
+    ax.plot(a[:, 0], a[:, 1], "o-", color=cols[n], ms=3.5, lw=1.5, label=f"$n={n}$ exact")
+    uu = np.linspace(1/(n+1), 1, 100); ax.plot(uu, 1-(1-uu)/(n*(1+uu)), color=cols[n], lw=1, ls="--")
+    ax.plot(0.0, n/(n+1), "<", color=cols[n], ms=7, clip_on=False)
+ax.plot([], [], color=INK2, ls="--", lw=1, label="one-reflection Doppler estimate")
+ax.set_xlim(0, 1.02); ax.set_xlabel("mirror speed $u/c$"); ax.set_ylabel(r"$E_\mathrm{after}/E_n$")
+ax.set_title("(c) massless field: energy kept\n(< marks the adiabatic value $n/(n+1)$)"); ax.legend(fontsize=7.5, loc="lower right")
+ax = fig.add_subplot(gs[1, 1])
+for n, a in ml.items():
+    ax.plot(a[:, 0], a[:, 2], "o-", color=cols[n], ms=3.5, lw=1.5, label=f"$n={n}$")
+    ax.axhline(n/(n+1), color=cols[n], lw=0.8, ls=":")
+ax.set_xlim(0, 1.02); ax.set_xlabel("mirror speed $u/c$"); ax.set_ylabel("energy fraction in mode $n{+}1$")
+ax.set_title("(d) massless field: at $u=c$ the step equals\nthe sudden embedding of Ch. 3 (dotted)"); ax.legend(fontsize=8, loc="upper left")
+# (e) what Delta L / t0 gives
+ax = fig.add_subplot(gs[:, 2])
+n = np.arange(1, 41)
+ax.plot(n, np.ones_like(n, float), color=C1, lw=2, label="massless, $t_0$ = half period")
+ax.plot(n, n*np.pi/1.0/np.pi, color=C2, lw=2, label=r"massive, $t_0=\Delta L/v_\mathrm{particle}$")
+ax.plot(n, n/2.0, color=C2, lw=1.4, ls="--", label=r"massive, $t_0$ = half period (phase velocity)")
+ax.plot(n, np.full_like(n, 3.0, dtype=float), color=C3, lw=2, ls="-.", label="any choice, along one iso-energy ladder\n($L\propto n$, so $L/n$ fixed)")
+ax.set_xlabel("mode number $n$"); ax.set_ylabel(r"$\Delta L/t_0$  (units: $c$ for massless, $\pi\hbar/(mL)$ for massive)")
+ax.set_title("(e) the apparent $n$-dependence of $\Delta L/t_0$\nappears only when $L$ is held fixed")
+ax.legend(fontsize=7.5, loc="upper left")
+fig.savefig("figs/figA_step_speed.png"); print("saved")

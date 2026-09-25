@@ -1,0 +1,439 @@
+{
+ "generated": "2026-08-22 01:09:20",
+ "tiers": [
+  "fast"
+ ],
+ "entries": [
+  {
+   "script": "ch02_iso_energy.py",
+   "tier": "fast",
+   "validates": "iso-energy curves figure",
+   "status": "ok",
+   "seconds": 0.8,
+   "printed": [
+    "figures -> ch02_fig1_iso_energy_curves.png, ch02_fig2_selection_rule.png"
+   ]
+  },
+  {
+   "script": "ch03_overlaps.py",
+   "tier": "fast",
+   "validates": "overlap closed forms; dilation matrix elements 10.4762/40.4938/160.4984",
+   "status": "ok",
+   "seconds": 1.2,
+   "printed": [
+    "=== promoted-mode overlaps sqrt(n/(n+m)) ===",
+    "  n=  1, m=1: closed 0.707107   formula-limit 0.707107",
+    "  n=  5, m=1: closed 0.912871   formula-limit 0.912871",
+    "  n= 20, m=1: closed 0.975900   formula-limit 0.975900",
+    "  n=  5, m=3: closed 0.790569   formula-limit 0.790569",
+    "=== closed form (3.8) vs quadrature ===",
+    "  max |closed - quadrature| = 7.77e-16",
+    "=== completeness sum_k |c_k|^2 = 1 ===",
+    "  n=1, s=2.0: sum = 1.00000000 (deficit 8.4e-12)",
+    "  n=3, s=1.5: sum = 1.00000000 (deficit 3.2e-11)",
+    "  n=7, s=1.2: sum = 1.00000000 (deficit 8.9e-11)",
+    "=== Dilation-Generator Lemma <n+1|x d/dx|n> = 2n(n+1)/(2n+1) ===",
+    "  n=  10: numeric 10.4762   formula 10.4762",
+    "  n=  40: numeric 40.4938   formula 40.4938",
+    "  n= 160: numeric 160.4984   formula 160.4984",
+    "figure -> ch03_fig1_sector_ladder.png"
+   ]
+  },
+  {
+   "script": "ch04_ladder_dynamics.py",
+   "tier": "fast",
+   "validates": "band structure; Bessel propagator 4e-16; participation R(1)=2.52",
+   "status": "ok",
+   "seconds": 1.6,
+   "printed": [
+    "Bessel propagator check at t=25.0: max |P_exact - J_d^2| = 4.71e-16",
+    "participation ratio R(1) = 2.521, R(5) = 1.431, R(100) = 1.020",
+    "figures -> ch04_fig1/2/3"
+   ]
+  },
+  {
+   "script": "ch05_regimes.py",
+   "tier": "fast",
+   "validates": "sudden/adiabatic regime diagram",
+   "status": "ok",
+   "seconds": 0.9,
+   "printed": [
+    "figure -> ch05_fig1_regimes.png"
+   ]
+  },
+  {
+   "script": "ch06_norms.py",
+   "tier": "fast",
+   "validates": "norm theorems; N_con table; fermion Gram det 0.2320<=0.3895; asymmetry vs N",
+   "status": "ok",
+   "seconds": 2.3,
+   "printed": [
+    "=== Contraction Norm Theorem: closed form vs quadrature ===",
+    "  (n1,n2)=(5,3): closed 0.76882  quadrature 0.76882",
+    "  (n1,n2)=(8,5): closed 0.85249  quadrature 0.85249",
+    "  (n1,n2)=(12,7): closed 0.90530  quadrature 0.90530",
+    "=== Expansion: norm = 1 and KE preservation (4000-mode sums) ===",
+    "  n2=3, s=1.25: norm 1.000000  KE(new)/KE(old) = 0.999937",
+    "  n2=5, s=1.2: norm 1.000000  KE(new)/KE(old) = 0.999939",
+    "=== Fermions: Slater/Gram determinant vs product law under contraction ===",
+    "  n1=5, spectator modes [1, 2, 3, 4, 6]: det Gram = 0.2320  <=  prod N_con = 0.3895 (Hadamard)",
+    "=== Sudden contraction: KE partial sums diverge linearly ===",
+    "  KE partial-sum slope per mode at large k: 4.525 (nonzero => linear divergence)",
+    "=== Expansion-Preference: sigma and N_crit ===",
+    "  n1=5: sigma = 0.216 per spectator, N_crit(1e6) ~ 64, N_crit(1e10) ~ 107",
+    "  n1=12: sigma = 0.082 per spectator, N_crit(1e6) ~ 168, N_crit(1e10) ~ 280",
+    "figures -> ch06_fig2_norm_deficit.png, ch06_fig4_asymmetry_vs_N.png"
+   ]
+  },
+  {
+   "script": "ch06_golden_rule.py",
+   "tier": "fast",
+   "validates": "golden-rule embedding theorem (Parseval vs N_con vs exact evolution)",
+   "status": "ok",
+   "seconds": 1.1,
+   "printed": [
+    "=== (i) Parseval sums vs closed-form N_con (220 modes/sector) ===",
+    "  (n1,n2)=(5,3): Parseval 0.76749   N_con 0.76882   residual +0.00133",
+    "  (n1,n2)=(8,5): Parseval 0.85112   N_con 0.85249   residual +0.00137",
+    "  (n1,n2)=(12,7): Parseval 0.90373   N_con 0.90530   residual +0.00157",
+    "=== (ii) exact evolution P(t)/(gt)^2 -> embedding norm ===",
+    "  P(t)/(gt)^2 at t = 2.0e-04 .. 2.0e-02: 0.7611 .. 0.6816",
+    "  embedding norm (Parseval, this basis): 0.7670; N_con = 0.7688",
+    "figure -> ch06_fig3_golden_rule_convergence.png"
+   ]
+  },
+  {
+   "script": "ch08_bag_spectrum.py",
+   "tier": "fast",
+   "validates": "MIT/chiral bag spectra; tan(pL)=-p/m checks (bag1d module self-test)",
+   "status": "ok",
+   "seconds": 1.2,
+   "printed": [
+    "=== A. MIT bag: solver vs tan(pL) = -p/m ===",
+    "  max |solver - tan-roots| = 3.57e-08",
+    "=== B. bulk phase: mirror symmetry and eta ===",
+    "  delta=0.300: levels=26, E<->-E asymmetry=6.76e-09, eta(t=0.05)=-3.80e-10",
+    "  delta=0.785: levels=26, E<->-E asymmetry=3.71e-08, eta(t=0.05)=-9.96e-10",
+    "=== C. chiral master equation vs transfer matrix ===",
+    "  max |master-eq residual| over 5 angle pairs = 3.81e-07",
+    "=== D. (delta,delta) walls + real mass == bulk complex mass ===",
+    "  max |spec diff| = 8.74e-08"
+   ]
+  },
+  {
+   "script": "ch09_eta_toy.py",
+   "tier": "fast",
+   "validates": "heat-kernel eta regulator on solvable example",
+   "status": "ok",
+   "seconds": 1.7,
+   "printed": [
+    "=== mirror spectrum: eta(t) ===",
+    "  max |eta(t)| = 0.0 (exact: 0)",
+    "=== shifted spectrum: eta(t->0) under three regulators ===",
+    "  heat  : eta(0) ~ +1.999817  (exact: +2)",
+    "  gauss : eta(0) ~ +2.000371  (exact: +2)",
+    "  cutoff: eta(0) ~ +2.000004  (exact: +2)",
+    "=== massless chiral bag: eta = Delta/pi, continuous, no crossing ===",
+    "  Delta=0.5: eta_heat=+0.15915494  eta_gauss=+0.15915494  Delta/pi=+0.15915494  min|E|=1.3208 > 0",
+    "  Delta=1.0: eta_heat=+0.31830989  eta_gauss=+0.31830989  Delta/pi=+0.31830989  min|E|=1.0708 > 0",
+    "  Delta=2.0: eta_heat=+0.63661977  eta_gauss=+0.63661977  Delta/pi=+0.63661977  min|E|=0.5708 > 0",
+    "  Delta=3.0: eta_heat=+0.95492966  eta_gauss=+0.95492966  Delta/pi=+0.95492966  min|E|=0.0708 > 0",
+    "=== two-wall bag (-2,+2), m=1: Q_vac(L) plateau flatness ===",
+    "  Q_vac(L=0.30) = +0.363371",
+    "  Q_vac(L=0.35) = +0.363334",
+    "  Q_vac(L=0.40) = +0.363355",
+    "  Q_vac(L=0.50) = -0.636650",
+    "  Q_vac(L=0.60) = -0.636651",
+    "  Q_vac(L=0.70) = -0.636652",
+    "  L* = artanh(0.41615) = 0.44302",
+    "  plateau spread below L*: 3.7e-05; above L*: 2.3e-06  (flat: the smooth part is L-independent at fixed angles)",
+    "figures -> ch09_fig1_eta_schematic.png, ch09_fig2_regulator_convergence.png"
+   ]
+  },
+  {
+   "script": "ch10_radial_similarity.py",
+   "tier": "fast",
+   "validates": "bulk-phase dressing theorem (5e-10 eigenvalues; e^{m_I r} ratio)",
+   "status": "ok",
+   "seconds": 19.0,
+   "printed": [
+    "=== Dressing Theorem: dressed system vs standard bag with m cos(delta) ===",
+    "  delta=0.3: levels 2, max |E_dressed - E_std(m cos d)| = 4.51e-11",
+    "  delta=0.6: levels 2, max |E_dressed - E_std(m cos d)| = 1.03e-11",
+    "  delta=1.0: levels 2, max |E_dressed - E_std(m cos d)| = 1.45e-11",
+    "  worst over deltas: 4.51e-11",
+    "=== wavefunction ratio g_delta/g_0 vs e^(m_I r) ===",
+    "  max |g_d/g_0 - e^(m_I r)| = 4.42e-11",
+    "figure -> ch10_fig3_radial_similarity.png"
+   ]
+  },
+  {
+   "script": "ch10_mirror_spectrum.py",
+   "tier": "fast",
+   "validates": "spectral mirror theorem; eta = O(1e-16) checks",
+   "status": "ok",
+   "seconds": 2.1,
+   "printed": [
+    "delta = 0.300: levels = 38, eta(t=0.03) = -1.48e-09",
+    "delta = 0.785: levels = 38, eta(t=0.03) = -6.60e-09",
+    "figure -> ch10_fig2_mirror_spectrum.png"
+   ]
+  },
+  {
+   "script": "ch10_slab_check.py",
+   "tier": "fast",
+   "validates": "slab eigenvalue theorem at randomized (k_y,k_z); 4-component solver",
+   "status": "ok",
+   "seconds": 1.5,
+   "printed": [
+    "=== Slab Eigenvalue Theorem check: m=1.0, L=1.0, delta=0.7 ===",
+    "confined roots p_j of tan(pL) = -p/(m cos d): [ 1.945389  4.868224  7.949894 11.06459  14.191011 17.322883 20.457721",
+    " 23.59435 ]",
+    "  ky=+0.751 kz=+2.383: 8 levels, max|E - E_pred| = 1.2e-07, two smallest svals at lowest level: 3.9e-08, 3.9e-08",
+    "  ky=+1.654 kz=-1.649: 8 levels, max|E - E_pred| = 1.1e-07, two smallest svals at lowest level: 2.3e-08, 2.3e-08",
+    "  ky=-1.199 kz=+2.241: 8 levels, max|E - E_pred| = 1.8e-07, two smallest svals at lowest level: 1.1e-08, 1.1e-08",
+    "  ky=-2.968 kz=+1.927: 8 levels, max|E - E_pred| = 1.0e-07, two smallest svals at lowest level: 4.4e-08, 4.4e-08",
+    "worst |E - E_pred| over the four momenta: 1.8e-07",
+    "worst second singular value (twofold spin degeneracy): 4.4e-08",
+    "negative branch residual at E = -2.667309: 1.6e-16 (should be ~0)",
+    "midgap scan (|E| < m, k_perp = 0): min residual = 1.77 (O(1): no midgap level)",
+    "residual at the special point E = -m cos d = -0.7648: 2.03 (nonzero: no eigenvalue)"
+   ]
+  },
+  {
+   "script": "ch11_wall_density.py",
+   "tier": "fast",
+   "validates": "vacuum charge density wall layers (new)",
+   "status": "ok",
+   "seconds": 1.2,
+   "printed": [
+    "old box  L=1.0:  net vacuum charge = -3.33e-16  (0 by construction: exact +-E pairing)",
+    "new box  L'=1.2: net vacuum charge = -1.25e-16",
+    "new vacuum charge inside old region [0, 1.0], heat kernel t=(0.04, 0.02, 0.01): [-0.06066 -0.06386 -0.06554]",
+    "  -> Richardson t->0: -0.06721  =  -DQ_cross(inf)",
+    "  (the Polarization Identity value +0.0672 printed by ch11_polarization.py, with the sign unwound)",
+    "figure -> C:\\Users\\gufer\\OneDrive\\Documenti\\PHD\\Expanding QFT\\Expanding-QFT\\v15\\thesis\\figures\\ch11_fig1_wall_charge_density.png"
+   ]
+  },
+  {
+   "script": "ch12_waterfall.py",
+   "tier": "fast",
+   "validates": "spectral-flow waterfall figure (new)",
+   "status": "ok",
+   "seconds": 3.6,
+   "printed": [
+    "predicted crossing: mL* = 0.44302",
+    "observed crossing in track: L = 0.44314  (predicted 0.44302)",
+    "figure -> C:\\Users\\gufer\\OneDrive\\Documenti\\PHD\\Expanding QFT\\Expanding-QFT\\v15\\thesis\\figures\\ch12_fig3_spectral_flow_waterfall.png"
+   ]
+  },
+  {
+   "script": "ch14_crossing_density.py",
+   "tier": "fast",
+   "validates": "crossing-existence criterion; nu maps; brute-force validation (new)",
+   "status": "ok",
+   "seconds": 9.9,
+   "printed": [
+    "=== One-Crossing Theorem: brute-force validation ===",
+    "  pairs tested: 390",
+    "  existence criterion correct: 390/390",
+    "  uniqueness (exactly one) correct: 390/390",
+    "  location matches artanh formula (<1e-6): 101/101 of existing",
+    "=== Flow direction vs sgn(sin(D/2)) ===",
+    "  crossings sampled: 12; sgn(dE/dL) * sgn(sin(D/2)) = +1.00 (all equal: True)",
+    "  [level RISES from sea to positive branch for sin(D/2)>0: Q_vac jumps by",
+    "   -sgn(sin(D/2)); pumped DQ_net = +sgn(sin(D/2)) under expansion across L*]",
+    "=== Demonstration point theta=(-2,+2) ===",
+    "  predicted mL* = 0.44302  (thesis: 0.44302)",
+    "=== Ensemble window probability and CP bias ===",
+    "  mu=0.0 sig=0.5 bias=0.0:  P_x = 0.0000,  eps_CP = +0.000",
+    "  mu=0.0 sig=1.5 bias=0.0:  P_x = 0.0727,  eps_CP = +0.016",
+    "  mu=0.0 sig=2.2 bias=0.1:  P_x = 0.1533,  eps_CP = +0.075",
+    "  mu=2.0 sig=1.0 bias=0.1:  P_x = 0.3846,  eps_CP = +0.099",
+    "  mu=2.0 sig=1.0 bias=0.3:  P_x = 0.3831,  eps_CP = +0.274",
+    "figure -> C:\\Users\\gufer\\OneDrive\\Documenti\\PHD\\Expanding QFT\\Expanding-QFT\\v15\\thesis\\figures\\ch14_fig2_crossing_density.png"
+   ]
+  },
+  {
+   "script": "ch14_eta_assembly.py",
+   "tier": "fast",
+   "validates": "eta_B assembly and budget tables (new)",
+   "status": "ok",
+   "seconds": 0.8,
+   "printed": [
+    "today conversion      (s/n_g)_0  = pi^4 g_s0/45 zeta3 = 7.039   (g_s0 = 43/11)",
+    "entropy conversion    45/2pi^2g* = 0.02136   (g* = 106.75; n_B/T^3 -> n_B/s)",
+    "sphaleron conversion  C_sph     = 28/79 = 0.3544",
+    "dof factor            N_dof     = 3   (colors; per-bag -> per-T^3 assumes n_bag ~ T^3 [Postulate])",
+    "baryon per quark      1/N_c     = 0.3333   (three pumped quarks = one baryon; N_dof/N_c = 1)",
+    "prefactor product               = 5.328e-02",
+    "=> eta_B = 5.33e-02 * P_x * eps_CP        (eq. 14.8: 5.3e-2 * ...)",
+    "observed eta_B = 6.143e-10  =>  required P_x * eps_CP = 1.15e-08  (eq. 14.9)",
+    "   at P_x = 1.00: required eps_CP = 1.15e-08",
+    "   at P_x = 0.38: required eps_CP = 3.03e-08",
+    "   at P_x = 0.15: required eps_CP = 7.69e-08",
+    "   at P_x = 0.07: required eps_CP = 1.65e-07",
+    "eps_CP reference ladder (Ch. 13.5 budget lines):",
+    "   GIM evaded, one loop (ceiling): J/16pi^2      = 1.9e-07   required/this (P_x=0.38) = 1.6e-01",
+    "   GIM evaded, two loops: J/(16pi^2)^2           = 1.2e-09   required/this (P_x=0.38) = 2.5e+01",
+    "   bulk-perturbative: J*S_GIM*(1/16pi^2)^2       = 1.2e-16   required/this (P_x=0.38) = 2.5e+08",
+    "   bar: strong walls, bulk-perturbative bias     eta_B = 2.4e-18",
+    "   bar: strong walls, GIM evaded at two loops    eta_B = 2.4e-11",
+    "   bar: strong walls, GIM evaded at one loop     eta_B = 3.8e-09",
+    "   bar: maximal                                  eta_B = 5.3e-02",
+    "figure -> ch14_fig3_eta_budget.png"
+   ]
+  },
+  {
+   "script": "ch15_imn.py",
+   "tier": "fast",
+   "validates": "IMN phi^2 sums (pi/8; 0.236 tail-corrected); Casimir negative result; spacelike commutator",
+   "status": "ok",
+   "seconds": 1.2,
+   "printed": [
+    "1+1D <phi^2>(L/2): partial sum to N=5000: 0.392667  vs  pi/8 = 0.392699",
+    "1+1D standard partial sum (log-divergent): 1.5577 and climbing",
+    "3+1D mode-volume sum saturated at |n| ~ 28 of 54",
+    "3+1D <phi^2>(center): partial 0.2349 at |n|max=201, tail-corrected 0.236 / L0^2 (tail ~ 1/|n|max)",
+    "zero-point sums at N=5000: standard ~ N^2 (1.25e+07), mode-volume ~ N (5.00e+03) \u2014 both divergent: NOT regulated",
+    "spacelike commutator [phi(x,t), phi(y,0)] at x=0.70, y=0.20 (separation 0.5 > t):",
+    "  t=0.10: standard +1.2e-08 (Huygens zero)   mode-volume +0.0338 (nonzero: microcausality violated)",
+    "  t=0.30: standard +6.2e-08 (Huygens zero)   mode-volume +0.1132 (nonzero: microcausality violated)",
+    "  t=0.49: standard +2.2e-06 (Huygens zero)   mode-volume +0.2615 (nonzero: microcausality violated)",
+    "figures -> ch15_fig1_per_mode_decay.png, ch15_fig2_phi2_plateau.png"
+   ]
+  },
+  {
+   "script": "ch16_kasner_circle.py",
+   "tier": "fast",
+   "validates": "Kasner circle / u-map figures",
+   "status": "ok",
+   "seconds": 0.9,
+   "printed": [
+    "BKL orbit from u0=4.3: [4.3    3.3    2.3    1.3    3.3333 2.3333 1.3333 3.    ]",
+    "figures -> ch16_fig2_kasner_circle.png, ch16_fig3_bkl_map.png"
+   ]
+  },
+  {
+   "script": "ch17_dictionary_check.py",
+   "tier": "fast",
+   "validates": "moving-wall vs metric spectrum equality (new)",
+   "status": "ok",
+   "seconds": 0.9,
+   "printed": [
+    "=== moving-wall vs metric spectra: independent matrices, independent grids ===",
+    "  L = 1.0: max |E_wall - E_metric| / E = 4.11e-06   (wall vs continuum 7.39e-06, metric vs continuum 3.29e-06)",
+    "  L = 1.7: max |E_wall - E_metric| / E = 4.11e-06   (wall vs continuum 7.39e-06, metric vs continuum 3.29e-06)",
+    "  L = 3.2: max |E_wall - E_metric| / E = 4.11e-06   (wall vs continuum 7.39e-06, metric vs continuum 3.29e-06)",
+    "  grid doubling shrinks the deviation by 3.99 (O(h^2): factor 4 expected)",
+    "  -> the two pictures agree through the continuum spectrum they share: the dictionary.",
+    "figure -> ch17_fig2_redshift_curves.png"
+   ]
+  },
+  {
+   "script": "ch18_metric_updates.py",
+   "tier": "fast",
+   "validates": "rank-1 metric updates figure",
+   "status": "ok",
+   "seconds": 0.7,
+   "printed": [
+    "(1) gl(3): span rank = 9/9; max commutator closure residual = 2.2e-16",
+    "(2) congruence update (18.2) over 200 random transitions: max residual = 2.8e-14",
+    "    rank of the update at a rectangular configuration: 1",
+    "    rank of the update at a sheared configuration: 2",
+    "(3) transitivity: 50 random SPD metrics realized as Gram matrices, residual = 3.6e-15",
+    "(5) rectangular control: FD ground state 21.8106 vs pi^2(A11+A22) = 21.8118   (rel 5.6e-05, discretization)",
+    "(4) sheared cell, g^12 = 0.3: even-in-shear check max|E(+s)-E(-s)| = 1.6e-12",
+    "    covariant shortcut, n=(+1,+1): 27.7336 vs exact 21.4834   (rel err 29.1%)",
+    "    covariant shortcut, n=(+1,-1): 15.8901 vs exact 21.4834   (rel err 26.0%)",
+    "    diagonal formula at the same stretch entries: 21.8118   (rel err 1.5% = the genuine O(shear^2) shift)",
+    "    verdict: the shortcut's linear-in-shear cross term is spurious (Ch. 19, Splitting (ii));",
+    "    (18.3) is exact on the rectangular sector and first-order-stationary off it."
+   ]
+  },
+  {
+   "script": "ch22_casimir_chain.py",
+   "tier": "fast",
+   "validates": "cell energetics; chain relaxation endpoints (0.135 / 3.865 / 24.000)",
+   "status": "ok",
+   "seconds": 1.3,
+   "printed": [
+    "# induced stiffness: vacuum (Casimir) wall attraction vs matter pressure",
+    "  empty-cell sizes at end:    [0.135 0.135 0.135 0.135 0.135 0.135]  (collapse)",
+    "  occupied-cell sizes at end: [3.865 3.865 3.865 3.865 3.865 3.865]  (survive & share length)",
+    "  endpoints: empty 0.135, occupied 3.865, total 24.000",
+    "  core scale check: empty endpoint / (sqrt(2) Lfloor) = 0.956  (isolated-cell balance predicts 1; the chain's inter-cell forces shift it)",
+    "figure -> ch22_fig2_cell_energetics.png"
+   ]
+  },
+  {
+   "script": "ch24_mixmaster.py",
+   "tier": "fast",
+   "validates": "BKL u-map sequence 4.3 -> 3.3 -> 2.3 -> 1.3 -> 10/3",
+   "status": "ok",
+   "seconds": 1.5,
+   "printed": [
+    "# ICs: u0=4.3, constraint residual = 7.24e-18, lambda shift = -1.40e-08",
+    "# constraint drift over run: 8.89e-13   (gate: 1e-10)",
+    "# epochs and the BKL map:",
+    "  epoch 1: u = 4.3001   (initial condition u0 = 4.3)",
+    "  epoch 2: u_measured = 3.3000   BKL prediction = 3.3001   diff = -0.0001",
+    "  epoch 3: u_measured = 2.3000   BKL prediction = 2.3001   diff = -0.0001",
+    "  epoch 4: u_measured = 1.3000   BKL prediction = 1.3001   diff = -0.0001",
+    "  epoch 5: u_measured = 3.3333   BKL prediction = 3.3327   diff = +0.0006",
+    "# max |u_measured - u_BKL| across epochs: 6.2e-04",
+    "figure -> ch24_fig3_mixmaster.png; data -> ch24_mixmaster_traj.npz"
+   ]
+  },
+  {
+   "script": "make_schematics.py",
+   "tier": "fast",
+   "validates": "all drawn/concept figures (28), reproducibly",
+   "status": "ok",
+   "seconds": 3.5,
+   "printed": [
+    "generating schematics:",
+    "  -> ch01_fig1_dependency_map.png",
+    "  -> ch01_fig2_three_faces.png",
+    "  -> ch26_fig1_three_faces_closed.png",
+    "  -> ch07_fig1_ecpt_lattice.png",
+    "  -> ch07_fig2_two_arrows.png",
+    "  -> ch08_fig2_boundary_geometry.png",
+    "  -> ch08_fig3_dirac_sea.png",
+    "  -> ch10_fig1_chiral_rotation_flow.png",
+    "  -> ch13_fig1_sakharov_map.png",
+    "  -> ch13_fig2_ewbg_failure_modes.png",
+    "  -> ch14_fig1_pipeline.png",
+    "  -> ch15_fig3_which_L.png",
+    "  -> ch16_fig1_adm_foliation.png",
+    "  -> ch17_fig1_dictionary.png",
+    "  -> ch18_fig2_gl3_decomposition.png",
+    "  -> ch18_fig3_conformal_obstruction.png",
+    "  -> ch19_fig1_shape_space.png",
+    "  -> ch20_fig1_two_couplings.png",
+    "  -> ch21_fig1_constraint_budget.png",
+    "  -> ch22_fig1_induced_logic.png",
+    "  -> ch22_fig4_planck_loop.png",
+    "  -> ch23_fig1_gauging_ladder.png",
+    "  -> ch23_fig2_compensator_id.png",
+    "  -> ch24_fig2_well_schematic.png",
+    "  -> ch25_fig1_sector_split.png",
+    "  -> ch26_fig2_chain_table.png",
+    "  -> ch27_fig1_program_map.png",
+    "done."
+   ]
+  },
+  {
+   "script": "regen_part1_figs.py",
+   "tier": "fast",
+   "validates": "fresh ch03/ch06/ch08 figures (overlap anatomy, spectator, bag spectrum)",
+   "status": "ok",
+   "seconds": 1.7,
+   "printed": [
+    "  -> ch03_fig3_overlap_wavefunctions.png",
+    "  -> ch06_fig1_spectator_projection.png (deficit check 0.23126 vs 0.23118)",
+    "  -> ch08_fig1_bag_spectrum.png"
+   ]
+  }
+ ]
+}
